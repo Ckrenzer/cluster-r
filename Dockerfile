@@ -5,4 +5,4 @@ LABEL version=${GITHASH}
 # all nodes in a cluster spun up by parallelly will require doParallel and
 # any other package used by code that runs in parallel
 # (Ex. code in the body of a foreach loop).
-RUN installr -d -t zlib-dev data.table doParallel
+RUN installr -d -t zlib-dev data.table gmp doParallel
